@@ -5,6 +5,9 @@
 
 > A mod try to fix RotaryCraft or ReactorCraft issues
 
+## require
+this mod require [UniMixins](https://github.com/LegacyModdingMC/UniMixins) to be able to modify class in 'safe' way
+
 ## issues
 
 - RotaryCraft: [Crash when right clicking bevel gears](https://github.com/ReikaKalseki/Reika_Mods_Issues/issues/3272)

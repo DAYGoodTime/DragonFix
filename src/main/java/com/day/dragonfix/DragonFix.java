@@ -15,7 +15,7 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
     version = Tags.VERSION,
     name = "DragonFix",
     acceptedMinecraftVersions = "[1.7.10]",
-    dependencies = "required-after:DragonAPI")
+    dependencies = "required-after:DragonAPI;required-before:unimixins")
 public class DragonFix {
 
     public static final String MODID = "dragonfix";

@@ -5,6 +5,9 @@
 
 > 一个尝试修复Roc和Rec bug的mod
 
+## 前置
+本Mod 需要 [UniMixins](https://github.com/LegacyModdingMC/UniMixins) 才能正常启动。
+
 ## 解决的问题列表
 
 - RotaryCraft: [右键斜齿轮箱崩溃](https://github.com/ReikaKalseki/Reika_Mods_Issues/issues/3272)
