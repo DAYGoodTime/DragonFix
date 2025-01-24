@@ -1,6 +1,5 @@
 package com.day.dragonfix;
 
-import com.myname.mymodid.Tags;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,11 +10,12 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = DragonFix.MODID,
+@Mod(
+    modid = DragonFix.MODID,
     version = Tags.VERSION,
     name = "DragonFix",
     acceptedMinecraftVersions = "[1.7.10]",
-    dependencies = "require-after:DragonAPI")
+    dependencies = "required-after:DragonAPI")
 public class DragonFix {
 
     public static final String MODID = "dragonfix";

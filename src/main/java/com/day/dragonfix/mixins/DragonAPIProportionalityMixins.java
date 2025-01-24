@@ -1,14 +1,17 @@
 package com.day.dragonfix.mixins;
 
-import Reika.DragonAPI.Instantiable.Data.Proportionality;
-import com.day.dragonfix.DragonFix;
+import java.lang.reflect.Field;
+import java.util.Map;
+
 import net.minecraft.util.StatCollector;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Unique;
 
-import java.lang.reflect.Field;
-import java.util.Map;
+import com.day.dragonfix.DragonFix;
+
+import Reika.DragonAPI.Instantiable.Data.Proportionality;
 
 @Mixin(value = Proportionality.class, remap = false)
 public class DragonAPIProportionalityMixins<F> {
@@ -43,8 +46,9 @@ public class DragonAPIProportionalityMixins<F> {
             }
             return big;
         } catch (Exception e) {
-            if(!dragonFix$loggedError){
-                DragonFix.LOG.warn(StatCollector.translateToLocal("dragonfix.dragonapi.proportinality.getlargestcategory.error"));
+            if (!dragonFix$loggedError) {
+                DragonFix.LOG.warn(
+                    StatCollector.translateToLocal("dragonfix.dragonapi.proportinality.getlargestcategory.error"));
                 DragonFix.LOG.error(e);
                 dragonFix$loggedError = true;
             }
