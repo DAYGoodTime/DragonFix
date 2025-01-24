@@ -5,10 +5,10 @@
 
 package Reika.ChromatiCraft.Auxiliary.Interfaces;
 
+import java.util.List;
+
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-
-import java.util.List;
 
 public interface NBTTile {
 
