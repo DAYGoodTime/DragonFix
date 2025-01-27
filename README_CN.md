@@ -7,7 +7,7 @@
 
 ## 前置
 本Mod 需要 [UniMixins](https://github.com/LegacyModdingMC/UniMixins) 才能正常启动。
-
+本Mod 只需服务端安装即可（Mod也修复了一些客户端的bug，所以你也可以为客户端安装）。
 ## 解决的问题列表
 
 - RotaryCraft: [右键斜齿轮箱崩溃](https://github.com/ReikaKalseki/Reika_Mods_Issues/issues/3272)

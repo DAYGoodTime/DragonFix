@@ -7,7 +7,7 @@
 
 ## require
 this mod require [UniMixins](https://github.com/LegacyModdingMC/UniMixins) to be able to modify class in 'safe' way
-
+this is a server side mod,you can only install in server (it also fix some client side issue,so you can install in client too)
 ## issues
 
 - RotaryCraft: [Crash when right clicking bevel gears](https://github.com/ReikaKalseki/Reika_Mods_Issues/issues/3272)

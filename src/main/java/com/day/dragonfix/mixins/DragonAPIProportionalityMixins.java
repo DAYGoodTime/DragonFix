@@ -12,6 +12,7 @@ import org.spongepowered.asm.mixin.Unique;
 import com.day.dragonfix.DragonFix;
 
 import Reika.DragonAPI.Instantiable.Data.Proportionality;
+import Reika.ReactorCraft.Registry.ReactorType;
 
 @Mixin(value = Proportionality.class, remap = false)
 public class DragonAPIProportionalityMixins<F> {
@@ -27,10 +28,6 @@ public class DragonAPIProportionalityMixins<F> {
      */
     @Overwrite
     public F getLargestCategory() {
-        if (!dragonFix$logged) {
-            DragonFix.LOG.info(StatCollector.translateToLocal("dragonfix.dragonapi.proportinality.getlargestcategory"));
-            dragonFix$logged = true;
-        }
         try {
             Field dataField = Proportionality.class.getDeclaredField("data");
             dataField.setAccessible(true);
@@ -43,6 +40,11 @@ public class DragonAPIProportionalityMixins<F> {
                     max = has;
                     big = o;
                 }
+            }
+            if (!dragonFix$logged && big instanceof ReactorType) {
+                DragonFix.LOG
+                    .info(StatCollector.translateToLocal("dragonfix.dragonapi.proportinality.getlargestcategory"));
+                dragonFix$logged = true;
             }
             return big;
         } catch (Exception e) {

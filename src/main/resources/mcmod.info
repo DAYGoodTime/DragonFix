@@ -6,7 +6,7 @@
 		"description": "A simple mod that try to fix Reika's mod",
 		"version": "${modVersion}",
 		"mcversion": "${minecraftVersion}",
-		"url": "https://github.com/SinTh0r4s/MyMod",
+		"url": "https://github.com/DAYGoodTime/DragonFix",
 		"updateUrl": "",
 		"authorList": ["DAYGoodTime"],
 		"credits": "",
